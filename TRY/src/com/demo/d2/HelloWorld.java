@@ -16,6 +16,8 @@ public class HelloWorld {
             }
         }
         System.out.println("Duplicate aplhabets are:"+name1);
+        
+        //added this comment to check how can i commit
     }
 }
 
