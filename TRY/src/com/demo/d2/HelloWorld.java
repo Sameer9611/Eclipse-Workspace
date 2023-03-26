@@ -4,13 +4,14 @@ import java.util.HashSet;
 
 public class HelloWorld {
     public static void main(String[] args) {
-       String name="narayan";
+       String name="samEer";
+       String namelow=name.toLowerCase();
        HashSet <Character> name1 = new HashSet<Character>();
        
-        for(int i=0 ; i <name.length();i++){
-            for(int j=i+1;j<name.length();j++){
-                if(name.charAt(i)==name.charAt(j)){
-                	char input =name.charAt(i);
+        for(int i=0 ; i <namelow.length();i++){
+            for(int j=i+1;j<namelow.length();j++){
+                if(namelow.charAt(i)==namelow.charAt(j)){
+                	char input =namelow.charAt(i);
                     name1.add(input);
                 }
             }
@@ -20,4 +21,3 @@ public class HelloWorld {
         //added this comment to check how can i commit
     }
 }
-
