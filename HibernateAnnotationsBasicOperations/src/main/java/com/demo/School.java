@@ -1,5 +1,6 @@
 package com.demo;
 
+import javax.persistence.Cacheable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,9 +8,16 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 @Entity//@javax.persistance//to make this class table
 //@Table(name="Schoolrename")>>renaming annotation
-public class School {
+
+/*this annotations are about 2nd level cache*/
+@Cacheable//>>javax.persistance
+@Cache(usage =CacheConcurrencyStrategy.READ_ONLY, region = "School")//>>org.hibernate.annotations.Cache
+public class School{
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)//ratta mar//PK
