@@ -13,5 +13,4 @@ public class Example {
 		Example ex = new Example();
 		ex.m1(null);
 	}
-
 }

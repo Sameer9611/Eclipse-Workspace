@@ -13,7 +13,7 @@ public class StudentList {
 		list.add(s);
 		list.add(new Student("ajay",2,60));
 		list.add(new Student("sanjay",23,70));
-		Collections.sort(list);;//this gives error cannot sort>>1)comparable 2)comparator
+		Collections.sort(list);//this gives error cannot sort>>1)comparable 2)comparator
 		return list;//
 		
 	}
