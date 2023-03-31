@@ -22,10 +22,9 @@ public class User {
 //	private BankAccounts bankaccounts;
 //  >>cannot use this: as i can only have 1 setter<<
 	
-	@OneToMany
+	//jya class mdhe vaprtoi te one asnar ani many other table cha field asnr je ki collection asnr(for many)
+	@OneToMany(mappedBy="user")//because this is a set>>cannot create a column in table User>>instead ut creates another table(user_bankaccounts-->1-1,1-2,1-3 id's)>>to avoid this can use mapped by
 	private Set<BankAccounts> bankaccounts = new HashSet<BankAccounts>();
-
-	
 
 	public int getUser_id() {
 		return user_id;

@@ -16,6 +16,7 @@ public class BankAccounts {
 	private String bankName;
 	private String bankBranch;
 	
+	//jo class(table) mdhe lehitoi tyt many rows asnr jy table mdhe add krychai to one asnr(so no need of collection) 
 	@ManyToOne//>>have to give user here also oneway relationship not allowed
 	@JoinColumn(name="user_id")
 	private User user;

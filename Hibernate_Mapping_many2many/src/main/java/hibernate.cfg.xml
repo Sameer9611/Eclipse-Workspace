@@ -2,7 +2,7 @@
 <hibernate-configuration>
 	<session-factory>
 		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/one2one </property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/many2many </property>
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password">Lenovo@9611</property>
 		
@@ -14,7 +14,7 @@
 		
 		
 		<!--<mapping resource="userdata.hbm.xml"></mapping> used ealier but here we dont have mapping file -->		
-		<mapping class="com.demo.Customer"></mapping>
-		<mapping class="com.demo.Transaction_Table"></mapping>
+		<mapping class="com.demo.Employees"></mapping>
+		<mapping class="com.demo.Projects"></mapping>
 	</session-factory>
 </hibernate-configuration>

@@ -1,6 +1,7 @@
 package com.demo;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 import org.hibernate.Session;
@@ -24,6 +25,7 @@ public class TestRun {
 		user1.setFirstName("sam");
 		user1.setLastName("Ghogare");
 		user1.setAge(25);
+		//setting bankaccnlist after creating them@line55
 		
 		//create bank acounts
 		
@@ -50,6 +52,10 @@ public class TestRun {
 		bankaccounts.add(bankaccounts1);
 		bankaccounts.add(bankaccounts2);
 		bankaccounts.add(bankaccounts3);
+		
+		//System.out.println(bankaccounts);>>[com.demo.BankAccounts@30814f43, com.demo.BankAccounts@289fdb08, com.demo.BankAccounts@7a231dfd]
+
+		
 		user1.setBankaccounts(bankaccounts);
 		
 		
@@ -60,8 +66,22 @@ public class TestRun {
 		
 
 		
-		transaction.commit();
+		transaction.commit();//commit requires when altering not for fetching
+		
+		//fetching
+		User ur = session.get(User.class,6);//(session.get>id is wrong:no error:null return>>use get >not sure>>no excception) (seesion.load>>null pointer exception>>use load if sure>fast)
+		System.out.println(ur.getFirstName());//sam
+		
+		for (BankAccounts ba:ur.getBankaccounts()) {//getBankaccounts() returns a set of BankAccounts as generic
+			System.out.println(ba.getAccNumber());
+			System.out.println(ba.getBankBranch());
+			System.out.println(ba.getBankName());
+
+
+		}
+		 
 		session.close();
+		
 		sessionFactory.close();
 
 		

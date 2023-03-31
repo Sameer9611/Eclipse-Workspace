@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 @Entity
 @Table(name="Transaction_Table")
@@ -19,6 +20,9 @@ public class Transaction_Table {
 	private Date date;
 	@Column(name="Total")
 	private int total;
+	
+	@OneToOne//(mappedBy="transaction_Table")//this not neccessary but this is called two way mapping(bi-directional mapping)>>get joincolumn in transaction table also
+	private Customer customer;//but if we give mappedBy=transactiontable here it does not create a jointable in Transactiontable
 	
 	
 	public int getTransaction_id() {
@@ -41,6 +45,15 @@ public class Transaction_Table {
 	public void setTotal(int total) {
 		this.total = total;
 	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+	
 	
 
 }
