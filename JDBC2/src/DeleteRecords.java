@@ -9,10 +9,10 @@ public class DeleteRecords {
 		try {
 			PreparedStatement ps=connection.prepareStatement("delete from employee where empid =?");
 			ps.setInt(1, employeeid);
+			System.out.println("deleted successfully");
 		} catch (SQLException e) {
 			e.printStackTrace();
-		}
-		System.out.println("deleted successfully");
+		}	
 	}
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);

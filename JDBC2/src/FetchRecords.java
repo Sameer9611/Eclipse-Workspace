@@ -50,7 +50,7 @@ public class FetchRecords {
 			ResultSet rs2=ps2.executeQuery();
 			System.out.println(rs2);//com.mysql.cj.jdbc.result.ResultSetImpl@2357d90a
 			while(rs2.next()) {//not hasNext>>.next :  resultset
-				System.out.println("id>>"+rs2.getInt(1));//iterates contents of that coloumn rowwise
+				System.out.println("id>>"+rs2.getInt(1));//iterates contents of that result coloumn rowwise
 			
 			}			
 		} 

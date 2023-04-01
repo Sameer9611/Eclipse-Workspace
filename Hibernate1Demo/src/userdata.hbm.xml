@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping> <!-- mapping always starts and ends with mapping tag(hbm.&cfg is compulsory -->
+	<class name="com.demo.userdata" >     <!--class tab name write fullname of class,this class will map with database:tells whats class name we whant to map -->
+<!--<class name="com.demo.userData" table="Userdatachangename"  use table to change name of table >-->
+		
+		<!-- primary key column(id tab)(all fields within class) -->
+		
+		<id name="serialuid">
+		<generator class ="identity" ></generator>     <!--<id>defines serialuid as PK and identity makes it auto_increment(various generator class,assigned,foreign,hilo,identity,increment(checks for current highest PK then increments it,native,sequence,uuid-->
+		</id>
+		
+		
+		<!-- other columns: using property tab -->
+		
+		<property name="firstname"></property>
+		<property name="lastname"></property>
+		<property name="city"></property>
+<!--    <property name="city" column="usercity"  to change name of column frm city to usercity></property>  -->
+		<property name="amount"> </property>
+	</class>
+</hibernate-mapping> 
