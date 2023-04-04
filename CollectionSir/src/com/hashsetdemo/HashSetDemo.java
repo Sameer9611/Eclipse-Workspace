@@ -15,12 +15,12 @@ public class HashSetDemo {
 		set.add(30);
 		set.add(10);
 		set.add(50);
-		set.add(30);//returns false if printed no error if duplicated added >just dont get added
+		set.add(30);//returns false if printed no error if duplicated added >just  get added
 		set.add(78);
 		set.add(12);
 		set.add(null);//onenull allowed as further acts as duplicates
 		set.add(null);
-		System.out.println(set);//[null, 50, 40, 10, 12, 30, 78]
+		System.out.println(set);//[null, 50, 40, 10, 12, 30, 78]//insertion order not preserved
 
 		
 		
@@ -32,11 +32,7 @@ public class HashSetDemo {
 		for(Integer i :set) {
 			
 		}
-		 
-		
-		
 		Set<String> set1 =  new HashSet();
-		
 		
 		
 		HashSet set2 = new HashSet<>(20, 0.80f);

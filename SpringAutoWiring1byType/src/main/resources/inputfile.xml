@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+     	http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	
+<!-- autowiring byType checks for data with type department(private Department department;)
+hence if i had another bean "dep2" could have caused ambiquity(multiple departments)
+this ambiquity can be overcome in springboot by annotations @qualifier(above class) @autowired(above field) -->	 	
+	<bean id="emp" class="com.demo.Employee" autowire="byType">
+	<property name="empID" value="101"></property>
+	<property name="name" value="Sameer"></property>
+	<property name="skillSet" value="Backend Dev"></property>
+	<!-- also no need to define Department department (in constructor it is neccessary) -->
+	</bean> 
+	
+	<bean id="dep" class="com.demo.Department">
+	<property name="depID" value="10"></property>
+	<property name="depName" value="Systems"></property>
+	<property name="strength" value="20"></property>
+	</bean> 
+	
+     	
+</beans>
+
+<!-- property requires setter method by default -->
+<!-- while constructor-arg requires a exact matching parameter constructor to fields-->

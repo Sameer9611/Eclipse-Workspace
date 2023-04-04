@@ -1,8 +1,6 @@
 package com.demo;
 
-import java.applet.AppletContext;
 
-import javax.sound.midi.Soundbank;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;

@@ -2,6 +2,7 @@ package com.array;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 //javaversion-->1.2
 //Iterable(I)>Collection(I)>List(I)>AbstractList(C)>ArrayList(C)
@@ -21,7 +22,8 @@ import java.util.List;
 		list1.add("prachi");//duplicates allowed
 		list1.add("sejal");		
 		list1.add(null);//null allowed
-
+		
+ 
 		ArrayList<String> list2= new ArrayList<>();
 		list2.add("sachin");
 		list2.add("dhoni");
