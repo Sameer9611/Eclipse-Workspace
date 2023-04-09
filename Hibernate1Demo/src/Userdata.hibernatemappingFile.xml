@@ -4,7 +4,7 @@
 	<class name="com.demo.Userdata" ><!--class tab name write fullname of class,this class will map with database -->
 <!--<class name="com.demo.UserData" table="Userdatachangename"  use table to change name of table >-->
 		<!-- primary key column -->
-		<id name="id">
+		<id name="serialuid">
 		<generator class ="identity" ></generator> <!--generator class identity is used to generate above field as PK in specified way in predifined identity class-->
 		</id>
 		<!-- other columns: using property tab -->

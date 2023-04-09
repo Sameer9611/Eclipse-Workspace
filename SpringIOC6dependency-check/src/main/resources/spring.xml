@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+   <!--   xmlns:context="http://www.springframework.org/schema/context"  -->
+    <!-- Spring2.5(2.5xsd) had a feature called dependency-check ,depricated in 3. onwards -->
+ 
+ <!--'id' defines name to bean/when request comes from employee class this bean "emp" will get created-->
+	<bean id="emp" class="com.demo.Employee" dependency-check="objects">
+	<!-- Use autowiring   -->
+	<!-- OR -->
+	<!--  <property name="department" ref="dep"></property> -->
+ 	<!-- hence will give error if Department is not assigned here as we have dependency check="objects" -->
+    </bean>
+    
+    <bean id="dep" class="com.demo.Department">
+    
+    </bean>
+</beans>  

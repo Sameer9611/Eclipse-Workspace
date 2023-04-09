@@ -23,7 +23,7 @@ public class Customer {
 	private String Email;
 	private String address;
 	
-	//now we want to add a foreignkey(ie PK of other customertable).so field with that table pojo cass is created:it uderstands automatically we just want PK as FK not whole table
+	//now we want to add a foreignkey(ie PK of other customertable).so field with that table pojo class is created:it uderstands automatically we just want PK as FK not whole table
 	@OneToOne(targetEntity=Transaction_Table.class,cascade=CascadeType.ALL)//>>onetoone means not multiple 1pk is linked to 1pk(not multiple) //dont know about cascade also a foreignkey annotation is present?
 	@JoinColumn(name="trans_id")//before table generates with "transaction_Table_transaction_id">>this column is called join column
 	private Transaction_Table transaction_Table;

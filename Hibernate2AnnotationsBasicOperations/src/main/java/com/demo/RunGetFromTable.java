@@ -3,7 +3,12 @@ package com.demo;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+
+import java.util.List;
+
+import org.hibernate.Query;
 import org.hibernate.cfg.Configuration;
+
 
 public class RunGetFromTable {
 	public static void main(String[] args) {
@@ -12,10 +17,17 @@ public class RunGetFromTable {
 		SessionFactory factory=configuration.buildSessionFactory();
 		Session session1 =factory.openSession();
 		Transaction transaction1=session1.beginTransaction();
+		Query query =  session1.createQuery("from School");
+		List list =query.list();
+		System.out.println("*****************************");
+		System.out.println(list);//[School [id=1, name=sameer, lastname=ghogare, city=Akluj, salary=232344], School [id=2, name=Vrush, lastname=dalvi, city=rautnagar, salary=32132], School [id=3, name=vaibhav, lastname=jaujal, city=pune, salary=65212], School [id=4, name=swara, lastname=atkire, city=akurdi, salary=345654]]
+		System.out.println("*****************************");
+
+		
 		School sc1=session1.get(School.class, 2);
 		System.out.println("1st>"+sc1);
 		School sc2=session1.get(School.class, 2);
-		System.out.println("2st>"+sc1);
+		System.out.println("2st>"+sc2);
 		School sc3=session1.get(School.class, 3);
 		System.out.println("3rd>"+sc3);
 		

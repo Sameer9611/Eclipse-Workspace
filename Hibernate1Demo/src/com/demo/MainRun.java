@@ -18,7 +18,7 @@ public class MainRun {
 	    ud1.setAmount(250000);
 	    
 	    userdata ud2 = new userdata();
-	    ud2.setFirstname("Vrushabh");
+	    ud2.setFirstname("krushabh");
 	    ud2.setLastname("Dalvi");
 	    ud2.setCity("Akluj");
 	    ud2.setAmount(193200);
