@@ -12,7 +12,6 @@ public class Runtest {
 	public static void main(String[] args) {
 	ApplicationContext applicationContext=new ClassPathXmlApplicationContext("inputfilespring.xml");
 	//>>this also works>>ClassPathXmlApplicationContext applicationContext1=new ClassPathXmlApplicationContext("inputfilespring.xml");
-
 		Employee employee1=(Employee) applicationContext.getBean("emp");
 		System.out.println(employee1);
 		

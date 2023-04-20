@@ -4,10 +4,7 @@ import java.io.ObjectOutputStream;
 public class Serial2 extends Serial1 {
 	int c=6;
 	String s ="yes";
-	
-	/**
-	 * 
-	 */
+
 	
 	private static final long serialVersionUID = -67900306606719022L;// added by suggestion
 	public void getSerialization() {

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+     	http://www.springframework.org/schema/beans/spring-beans.xsd
+     	http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+     	
+    
+    
+    
+    <context:annotation-config/>
+	
+<!-- autowiring byName checks for data with name of field and name of bean
+hence if i had another bean "dep2" will not  have ambiquity(multipile names present(if same name beans>>then ambiquity) -->	 	
+	<bean id="emp1" class="com.demo.Employee" >
+	<property name="empID" value="101"></property>
+	<property name="name" value="Sameer"></property>
+	<property name="skillSet" value="Backend Dev"></property>
+	<!-- also no need to define Department department (in constructor it is neccessary) -->
+	</bean> 
+	
+	<bean id="emp2" class="com.demo.Employee">
+	<property name="empID" value="102"></property>
+	<property name="name" value="Vrushab"></property>
+	<property name="skillSet" value="frontend Dev"></property>
+	<!-- also no need to define Department department (in constructor it is neccessary) -->
+	</bean> 
+	
+	<bean id="dep1" class="com.demo.Department">
+	<property name="depID" value="10"></property>
+	<property name="depName" value="Systems"></property>
+	<property name="strength" value="20"></property>
+	</bean> 
+	
+	<bean id="dep2" class="com.demo.Department">
+	<property name="depID" value="11"></property>
+	<property name="depName" value="HR"></property>
+	<property name="strength" value="200"></property>
+	</bean>
+	
+	<bean id="dep3" class="com.demo.Department">
+	<property name="depID" value="13"></property>
+	<property name="depName" value="Devlopment"></property>
+	<property name="strength" value="100"></property>
+	</bean>  
+	
+     	
+</beans>
+
+<!-- property requires setter method by default -->
+<!-- while constructor-arg requires a exact matching parameter constructor to fields-->

@@ -60,10 +60,10 @@ public class TestRun {
 		
 		
 		session.save(user1);
-		session.save(bankaccounts1);
-		session.save(bankaccounts2);
-		session.save(bankaccounts3);
-		
+//		session.save(bankaccounts1);
+//		session.save(bankaccounts2); NO need to save as we have used cascade in user1 bankaccounts field
+//		session.save(bankaccounts3);
+//		
 
 		
 		transaction.commit();//commit requires when altering not for fetching

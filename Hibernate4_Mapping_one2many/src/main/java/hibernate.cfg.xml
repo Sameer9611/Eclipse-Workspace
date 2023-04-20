@@ -7,7 +7,7 @@
 		<property name="hibernate.connection.password">Lenovo@9611</property>
 		
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>  <!--changes Hibernate qwery lang to MySql qwery lang  -->
-		<property name="hbm2ddl.auto">create</property> <!-- hibernate to ddl(create,drop,trunacate,alter -->
+		<property name="hbm2ddl.auto">update</property> <!-- hibernate to ddl(create,drop,trunacate,alter -->
 		<!--dont use create:(drops old creates new table every time,use update:(creates once updates later acrn to qwerys) -->
 		
 		<property name="show_sql">true</property>  <!--prints which qweries are actually firing  -->

@@ -17,7 +17,7 @@ public class userdata /*keep name u want to give to table or similar to table na
 	/*POJO class*/
 	private long serialuid;
 	private String firstname;
-	private String lastname;   //Fields acting as column names
+	private String lastname;//Fields acting as column names
 	private String city;
 	private int amount;
 	public long getserialuid() {

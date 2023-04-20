@@ -1,7 +1,7 @@
 package com.demo;
 // if wew want a xerox copy of a object ( no need to create a new) just clone it
-public class CloneDemo implements Cloneable{
-	int id;
+public class CloneDemo implements Cloneable{//so clonable is a marker interface ie.blank(hence no suggestion to implement unimplemented methods)
+	int id;                                 // just Clonable markerinterface gives a idea that Object class .clone() method can be used now 
 	String name;
 	
 	public CloneDemo(int id, String name) {

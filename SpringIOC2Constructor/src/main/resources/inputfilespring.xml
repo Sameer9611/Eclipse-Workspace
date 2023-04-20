@@ -4,10 +4,19 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-  <bean id="emp" class="com.demo.Employee">
-  	<constructor-arg index="0" value="101"></constructor-arg>
+  <bean  name="emp"  class="com.demo.Employee"><!-- even if no index given it is intelligent enough to identify which arg is which,but can cause ambiguity  -->
+  	<!-- it prefers	 (string wla)2nd constructor if type not specified (or to be more specific can use 'name' -->
+  	<constructor-arg index="0" value="101" type="int"></constructor-arg>
   	<constructor-arg index="1" value="Vivek"></constructor-arg>
-  	<constructor-arg index="3" value="2500"></constructor-arg>
+  	<constructor-arg index="3" value="2500" type="int"></constructor-arg>
   	<constructor-arg index="2" value="pune"></constructor-arg>
+  	<constructor-arg index="4">
+  		<list>
+  			<value>23</value>
+  			<value>24</value>
+  			<value>25</value>
+  			<value>26</value>
+  		</list>
+  	</constructor-arg>
   </bean>
 </beans>
