@@ -14,5 +14,11 @@ public class c1{
 		System.out.println(max);
 
 	}
+	protected void protectedMethod() {
+		
+	}
+	public void publicMethod() {
+		
+	}
 }
 

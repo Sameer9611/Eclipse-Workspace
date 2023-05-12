@@ -6,7 +6,7 @@ public class ConstructorTypes {
 	// ConstructorTypes(){   //default constructor>> created by default
 	//  no code present                      (this will be invisible, called default constructor)
 	//  }
-	ConstructorTypes() { // modifier = default(modifier can be any public,protected,private(no final)
+	public ConstructorTypes() { // modifier = default(modifier can be any public,protected,private(no final)
 		//super(); also calls super if parent class exists else does not make sense
 		userId=5;// we can type body     // but we have created this,and have no arguments,hence no argu constructor
 		//though it does not have arguments we can initialize in body
@@ -29,13 +29,16 @@ public class ConstructorTypes {
 		//      2) but if no arg constructor is created by us; it will invoke that.
 		//         so in our case 'no argument' construct . will get evoked.
 		ConstructorTypes constructortypes2 = new ConstructorTypes(55,"sam");
+		constructortypes2.getStudent();//constructor line 13
+
 		ConstructorTypes constructortypes3 = new ConstructorTypes(54,"jack");
+		constructortypes3.getStudent();//constructor line 13
+
 		ConstructorTypes constructortypes4 = new ConstructorTypes(9611);
-		 new ConstructorTypes().getStudent(); // goes to line 9 constructor and gets default valuesonstructorTypes constructortypes4 = new ConstructorTypes();
-		  constructortypes2.getStudent();//constructor line 13
-		  constructortypes3.getStudent();//constructor line 13
-		  constructortypes4.getStudent();// this will call constructor with 1 argument line no.18 and gives null to string
-		 // new ConstructorTypes("sam").getStudent();>> will give error cause only string counstructor does not exists.
+		constructortypes4.getStudent();// this will call constructor with 1 argument line no.18 and gives null to string
+
+		new ConstructorTypes().getStudent(); // goes to line 9 constructor and gets default valuesonstructorTypes constructortypes4 = new ConstructorTypes();
+		 // new ConstructorTypes("sam").getStudent();>> will give error cause only string constructor does not exists.
 	}
 	
 

@@ -15,6 +15,13 @@ public class CountCharacters {
 			
 		}
 		System.out.println(count);
+		
+		
+		c1 c1 =  new c1();
+		c1.protectedMethod();//accessible
 	}
+	
+	
+	
 
 }

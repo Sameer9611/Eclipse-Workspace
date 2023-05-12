@@ -14,6 +14,11 @@ public class OperatorTypes {  //class cannot be made static
 		//float avg =b/a;
 		//System.out.println(avg);
 		
+		int x =99;
+		int y=999;
+		String result = (x>y)?"x is greater":"y is greater";
+		System.out.println(result);
+		
 	}
 	public int getAdd(){
 		int Add= Aaa+Bbb ;

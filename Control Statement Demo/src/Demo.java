@@ -8,6 +8,7 @@ public class Demo {
 		getIfElseLadder();
 		getNestedIf();
 		getSwitch();
+		getSwitch1();
 		
 	}
 	
@@ -65,9 +66,7 @@ public class Demo {
 		}
 	}
 	
-	
-	
-	
+
 	public static void getSwitch() {
 		int month = 3;
 		switch (month) {
@@ -87,11 +86,11 @@ public class Demo {
 			System.out.println("out of range");
 		case 5 :
 			System.out.println("may");
-			break;
-			
-		case 6 :
+			break;	
+		case 6 :{
 			System.out.println("jun");
 			break;
+		}
 		case 7 :
 			System.out.println("jul");
 			break;
@@ -110,6 +109,27 @@ public class Demo {
 		case 12 :
 			System.out.println("dec");
 			break;
+		}
+	}
+	
+	public static void getSwitch1() {
+		String month ="jan" ;
+		switch (month) {
+		case "jan" :  // variable data type(int method) and case label(1) should be same datatype
+			System.out.println("month 1");
+			break;
+		case "feb" :
+			System.out.println("month 2");
+			break;
+		case "mar" :
+			System.out.println("month 3"); // if break is not given to all cases prints after 3,even deafault prints
+			break;
+		case "apr" :
+			System.out.println("month 4");
+			break;
+		default: // default can be placed anywhere
+			System.out.println("out of range");
+	
 		}
 	}
 	

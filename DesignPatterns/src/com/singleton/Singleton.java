@@ -26,13 +26,13 @@ public class Singleton implements Cloneable{
 	
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
-		//return super().clone();
+		//return super().clone();>>by default this comes
 		return singletonObj;//returned the same Object
 	}
 	
 	
 	public static void main(String[] args) {
-		Singleton singleton1 =getInstance();
+		Singleton singleton1 =Singleton.getInstance();
 		System.out.println(singleton1.hashCode());//2018699554 before overriding clone method//after>>2018699554
 		
 		try {

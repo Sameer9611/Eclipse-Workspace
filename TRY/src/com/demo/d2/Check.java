@@ -1,6 +1,8 @@
 package com.demo.d2;
 
-public class Check {
+import com.demo.d1.c1;
+
+public class Check extends c1 {
 	public static void main(String[] args) {
 		String name ="Naman";
 		String rev="";
@@ -15,6 +17,8 @@ public class Check {
 		else {
 			System.out.println("not a palandorme");
 		}
+		Check dd = new Check();//child reference only to acess protected method or variable
+		dd.protectedMethod();
 	}
 
 }

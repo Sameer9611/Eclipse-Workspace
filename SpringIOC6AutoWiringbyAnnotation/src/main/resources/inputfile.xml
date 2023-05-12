@@ -13,7 +13,7 @@
     <context:annotation-config/>
 	
 <!-- autowiring byName checks for data with name of field and name of bean
-hence if i had another bean "dep2" will not  have ambiquity(multipile names present(if same name beans>>then ambiquity) -->	 	
+hence if i had another bean "dep2" will not  have ambiquity(multiple names present(if same name beans>>then ambiquity) -->	 	
 	<bean id="emp1" class="com.demo.Employee" >
 	<property name="empID" value="101"></property>
 	<property name="name" value="Sameer"></property>

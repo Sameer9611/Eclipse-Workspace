@@ -22,6 +22,5 @@ public class Chaining_Constructor2 extends Chaining_Constructor  {
 	
 	public static void main(String[] args) {
 		Chaining_Constructor2 obj = new Chaining_Constructor2();
-		
 	}
 }

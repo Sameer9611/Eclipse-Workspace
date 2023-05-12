@@ -7,11 +7,6 @@ public class Run{
 		
 		Singleton singleton2 =Singleton.getInstance();
 		System.out.println(singleton2.hashCode());//2018699554
-		
-		
-		
-		
-		
 	}
 
 }
