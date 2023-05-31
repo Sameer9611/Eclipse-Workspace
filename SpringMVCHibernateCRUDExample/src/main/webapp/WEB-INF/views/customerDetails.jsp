@@ -57,7 +57,7 @@ td, th {
 				<td><form:input path="mobileNumber" size="30" maxlength="30"></form:input></td>
 			</tr>
 			<tr>
-				<td colspan="2"><input type="submit" class="blue-button" /></td>
+				<td colspan="2"><input type="submit"  class="blue-button" />"</td>
 			</tr>
 		</table>
 	</form:form>

@@ -14,7 +14,7 @@ public class MapDemo {
 		System.out.println(names);//{sameer=ghogare, shanaya=godbole, sarang=patil}
 		
 		//foreach can be used to itterate
-		names.forEach((a,b)->System.out.println("key is>>"+a+" value is>>"));
+		names.forEach((a,b)->System.out.println("key is>>"+a+" value is>>"+b));
 		//most simple method to itterate a map else iterator .entryset,hasnext,next,keyset,getvalue(key)
 		
 		
