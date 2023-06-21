@@ -20,7 +20,7 @@ public class Demo extends Thread{
 		d1.setName("sam");
 		System.out.println(d1.getName());//sam >>> names the thread
 		System.out.println(d1.getPriority());//5//The thread priority ranges from 1 to 10, while the default priority value of a thread is 5.
-		d1.setPriority(2);//The larger the integer, the higher the priority. The thread scheduler uses this integer from each thread to determine which one should be allowed to execute
+		d1.setPriority(1);//The larger the integer, the higher the priority. The thread scheduler uses this integer from each thread to determine which one should be allowed to execute
 		System.out.println(d1.getPriority());//10
 		System.out.println(d1.hashCode());//hashcode of object>>same only
 		System.out.println(d1);//Thread[sam,10,]>>>[name,priority]>>prints without toString

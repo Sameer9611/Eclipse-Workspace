@@ -26,8 +26,8 @@ public class StringDemo {
 	String s10 =new String("Tendulkar");//2 obj created-->1 heap , 1 SCP
 	System.out.println(s6.equals(s7)+" new");//true (content is tho obj are diff)
 	System.out.println(s7.equals(s8)+" new");//True (content same even tho diff Areas)
-	System.out.println((s6==s7)+" ==");//checks for pointings,if difference reference point same object returns true//else even if content is same can return false
-	System.out.println((s8==s9)+" ==");// same objs in SCP with multiple reference hence true
+	System.out.println((s6==s7)+" ==");//false//checks for pointings,if difference reference point same object returns true//else even if content is same can return false
+	System.out.println((s8==s9)+" ==");//true// same objs in SCP with multiple reference hence true
 	
 	
 	String s11 = "velocity";

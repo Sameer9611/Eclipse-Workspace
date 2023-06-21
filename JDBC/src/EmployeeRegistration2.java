@@ -22,7 +22,7 @@ public class EmployeeRegistration2 {
 		int salary=sc.nextInt();
 		sc.close();
 		
-	
+		
 		
 		String sql1 ="insert into employee(firstname,lastname,salary) values(?,?,?);";
 		try {

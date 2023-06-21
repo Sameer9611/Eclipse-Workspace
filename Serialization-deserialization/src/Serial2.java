@@ -13,7 +13,7 @@ public class Serial2 extends Serial1 {
 		System.out.println(e1+"e1 object");// help of to string ::Serial2 [a=5, b=6, name=sam]//"sam" prints but does not transient(before to string:Serial2@7852e922)
 		System.out.println(e2+"e2 object");//Serial2 [c=6, s=yes, a=5, b=6, name=sam]e2 object
 		FileOutputStream fos;
-		ObjectOutputStream oos ;
+		ObjectOutputStream oos;
 		try {
 			fos = new FileOutputStream("D:\\SOFTWARES\\ECLIPS\\workspace\\Serialization-deserialization\\src\\SerializationFile.txt");
 			oos = new ObjectOutputStream(fos);

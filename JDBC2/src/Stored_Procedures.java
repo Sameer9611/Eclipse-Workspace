@@ -10,7 +10,7 @@ public class Stored_Procedures {
 	public static void getStored_Procedures(int sal) {
 		Connection con =CommonConnection.getConnection();
 		try {//this is stored_produre fetches the data>>obviously can be used for mapulating data base(insert delete,create table)
-			CallableStatement cs=con.prepareCall("call `FetchEMplSal>inputsal`(?)");
+			CallableStatement cs=con.prepareCall("call `FetchEMplSal>iinputsal`(?)");
 			cs.setInt(1,sal);
 			ResultSet rs=cs.executeQuery();//forgot to write execute 20 min wasted>>no error
 			while(rs.next()) {
@@ -29,7 +29,7 @@ public class Stored_Procedures {
 		
 //		Connection con =CommonConnection.getConnection();
 //		try {//this is stored_produre fetches the data>>obviously can be used for mapulating data base(insert delete,create table)
-//			PreparedStatement cs=con.prepareStatement("call `FetchEMplSal>inputsal`(?)");
+//			?<<<PreparedStatement cs=con.prepareStatement("call `FetchEMplSal>inputsal`(?)");
 //			cs.setInt(1,sal);
 //			ResultSet rs=cs.executeQuery();//forgot to write execute 20 min wasted>>no error
 //			while(rs.next()) {

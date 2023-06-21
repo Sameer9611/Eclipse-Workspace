@@ -11,10 +11,12 @@ public class Student implements Comparable<Student> {//if genrics not given>>orv
 		this.roll = roll;
 		this.marks = marks;
 	}
+	
 	@Override
 	public String toString() {
 		return "Student [name=" + name + ", roll=" + roll + ", marks=" + marks + "]";
 	}
+
 	@Override//sorting ascending based on roll(for descending inter-change +1,-1)
 	public int compareTo(Student s) {// this is a standard format (ratta maar)
 		if(roll ==s.roll) {

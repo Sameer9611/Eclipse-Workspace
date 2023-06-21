@@ -9,12 +9,12 @@ public class StudentList {
 	
 	public ArrayList<Student> getStudentList(){//this shows we can returun a arraylist also
 		//it expects the object of ArrayList<Student>
-		ArrayList<Student> list = new ArrayList<>();
+		ArrayList<Student> mylist = new ArrayList<>();
 		Student s = new Student("sam",21,50);
-		list.add(s);
-		list.add(new Student("ajay",22,60));
-		list.add(new Student("sanjay",23,70));
-		return list;
+		mylist.add(s);
+		mylist.add(new Student("ajay",22,60));
+		mylist.add(new Student("sanjay",23,70));
+		return mylist;
 		
 	}
 	

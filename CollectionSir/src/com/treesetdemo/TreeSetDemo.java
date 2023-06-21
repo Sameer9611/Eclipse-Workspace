@@ -15,12 +15,12 @@ public class TreeSetDemo {
 		set.add("Akash");
 		set.add("Abhik");
 		set.add("Sejal");
-		set.add("Kiran");
+		set.add("Kiran");		
+		System.out.println(set);//[Abhik, Akash, Kiran, Nayan, Pranav, Sejal]
+
+		 
 		
-		
-		//System.out.println(set);
-		
-		 Set<Integer> set1=  new TreeSet();
+		Set<Integer> set1=  new TreeSet();
 	     set1.add(10);
 	     set1.add(40);
 	     set1.add(30);
@@ -29,7 +29,8 @@ public class TreeSetDemo {
 	     set1.add(20);
 	     set1.add(80);
 	  
-	  System.out.println(set1);
+	  System.out.println(set1);//[10, 20, 30, 40, 50, 70, 80]
+
 	  
 	  
 	}

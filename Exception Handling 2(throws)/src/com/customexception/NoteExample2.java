@@ -5,9 +5,10 @@ public class NoteExample2 {
 		
 		try {
 			throw new NoteExample("lnvalid input");
-		} catch (NoteExample e) {  // we are catching the thrw here
+		} 
+		catch (NoteExample e) {  // we are catching the thrw here
 			
-			System.out.println(e);  // hence util we print it, we will not see that
+			System.out.println(e);  // hence until we print it, we will not see that
 		}
 		
 		

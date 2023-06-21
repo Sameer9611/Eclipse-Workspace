@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Map.Entry;
@@ -61,6 +62,7 @@ public class Mapdemo {
 //		value is>>>1
 //		key is>>>nayan
 //		value is>>>2
+		
 	}
 	System.out.println("-------------------------------------------------------");
 	Set<String>set1=hm.keySet();

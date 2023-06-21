@@ -9,6 +9,7 @@ public class DeleteRecords {
 		try {
 			PreparedStatement ps=connection.prepareStatement("delete from employee where empid =?");
 			ps.setInt(1, employeeid);
+			ps.execute();
 			System.out.println("deleted successfully");
 		} catch (SQLException e) {
 			e.printStackTrace();

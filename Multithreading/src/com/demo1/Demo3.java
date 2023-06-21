@@ -1,3 +1,4 @@
+
 package com.demo1;
 //It is a functional interface(java.lang). It can be used to create a thread. It has a single abstract method 'run'
 //functional(has 1 method(ofcourse abstract)) is just another type like markup(has 0 methods:clonable,serializable)

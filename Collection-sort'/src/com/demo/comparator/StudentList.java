@@ -13,7 +13,6 @@ public class StudentList {
 		//Collections.sort(list, new RollComparator());//this gives error cannot sort>>1)comparable 2)comparator
 		Collections.sort(list, new nameComparator());
 		return list;
-		
 	}
 	
 	public static void main(String[] args) {

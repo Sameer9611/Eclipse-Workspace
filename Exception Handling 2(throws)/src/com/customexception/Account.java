@@ -7,7 +7,7 @@ public class Account {
 	public int getBalance() {
 		return this.balance;
 	}
-	public void withdrawal(int amount) {
+	public void withdrawal(int amount)  {
 		if(amount>balance) {
 			throw new InsufficientFund("you dont have sufficient balance");// throw new object of insufficientfund with argument// this object calls constructor(with string as parameter)
 			//Exception in thread "main" com.customexception.InsufficientFund: you dont have sufficient balance
@@ -18,7 +18,7 @@ public class Account {
 			System.out.println("balance remaining is "+balance);
 		}
 	}
-	public static void main(String[] args) {
+	public static void main(String[] args)  {
 		new Account().withdrawal(21000);//object of account//no parent call default constructor and keeps quiet
 	}
 

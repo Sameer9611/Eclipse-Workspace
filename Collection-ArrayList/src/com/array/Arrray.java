@@ -1,5 +1,6 @@
 package com.array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -14,6 +15,7 @@ import java.util.List;
  public class Arrray {
 	
 	public static void main(String[] args) {
+		//List<String> listx=Arrays.asList("Sam","dd","dfsdf");
 		ArrayList<String> list1= new ArrayList<>();
 		//list1= {"sam","pramod"};>>does not work
 		list1.add("sam");

@@ -1,6 +1,6 @@
 
 public class Chaining_Constructor {
-	Chaining_Constructor(){
+	  Chaining_Constructor(){
 		this(34);
 		System.out.println("no arg: parent constructor");
 	}

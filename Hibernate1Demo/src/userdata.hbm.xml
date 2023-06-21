@@ -19,3 +19,5 @@
 		<property name="amount"> </property>
 	</class>
 </hibernate-mapping> 
+
+<!-- This is outdated we directly use Annotations now-a-days -->

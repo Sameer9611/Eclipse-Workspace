@@ -1,6 +1,6 @@
 package com.demo.d1;
 
-public class c1{
+public  class c1{
 	
 	
 	public static void main(String[] args) {
@@ -12,11 +12,13 @@ public class c1{
 			}
 		}
 		System.out.println(max);
+		System.err.println("this is an error");
 
 	}
 	protected void protectedMethod() {
 		
 	}
+	
 	public void publicMethod() {
 		
 	}
